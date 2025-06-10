@@ -1,0 +1,27 @@
+@if (showmodal) {
+<div class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            @if (data) {
+                <h2>{{ data.nombre }}</h2>
+            }
+            <button (click)="onClose()" class="close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <ng-content></ng-content>
+            @if (data) {
+            <div class="mc">
+                <div class="img-container">
+                    <img [src]="data.imagen" [alt]="data.nombre">
+                </div>
+                
+                <p>{{ data.descripcion }}</p>
+                <p>Precio: ${{ data.precio}}</p>
+                <button class="add">Add +</button>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+}

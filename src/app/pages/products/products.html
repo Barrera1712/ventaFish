@@ -9,10 +9,12 @@
         <div class="img-container">
             <img [src]="product.imagen" [alt]="product.nombre">
         </div>
-        
+
         <p>Description: {{ product.descripcion}}</p>
         <p>Price: ${{ product.precio }}</p>
-        <button>Ver más +</button>
+        <button (click)="productSelect(product)">Ver más +</button>
     </div>
     }
 </aside>
+
+<app-modal [showmodal]="showModal" [data]="modalData" (closeModal)="closeModal()"></app-modal>
