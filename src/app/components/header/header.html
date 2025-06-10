@@ -1,0 +1,13 @@
+<header>
+    <button class="hamburger" (click)="toggleMenu()" aria-label="Abrir menú">
+        &#9776;
+    </button>
+    <nav [ngClass]="{'open': menuAbierto}">
+        <ul>
+            <li><a routerLink="home">Home</a></li>
+            <li><a routerLink="about">About</a></li>
+            <li><a routerLink="contact">Contact</a></li>
+            <li><a routerLink="products">Products</a></li>
+        </ul>
+    </nav>
+</header>

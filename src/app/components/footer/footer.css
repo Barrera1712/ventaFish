@@ -1,0 +1,12 @@
+footer{
+    background-color: #007d8d;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    box-shadow: 0rem -0.1rem 1rem rgba(0, 59, 66, 0.7);
+    color: white;
+}
+
+a {
+    color: #9feef8;
+}

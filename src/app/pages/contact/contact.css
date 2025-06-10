@@ -1,0 +1,14 @@
+.das {
+    width: 100%;
+    display: flex;
+}
+.dash img{
+    object-fit: cover;
+}
+
+h1{
+    color: white;
+    background-color: #007d8d;
+    text-align: center;
+    width: 100%;
+}

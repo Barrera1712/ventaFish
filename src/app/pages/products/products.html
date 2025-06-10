@@ -1,0 +1,18 @@
+<h1> Los mejores productos solo aqui!</h1>
+<div class="dash">
+    <img src="img/pruducts.webp" alt="">
+</div>
+<aside>
+    @for (product of ProductsList; track $index) {
+    <div class="card">
+        <h2>{{ product.nombre }}</h2>
+        <div class="img-container">
+            <img [src]="product.imagen" [alt]="product.nombre">
+        </div>
+        
+        <p>Description: {{ product.descripcion}}</p>
+        <p>Price: ${{ product.precio }}</p>
+        <button>Ver más +</button>
+    </div>
+    }
+</aside>
