@@ -22,7 +22,9 @@
             }
         </div>
         <div class="modal-footer">
-            <button class="add">Add +</button>
+            @if (data) {
+                <button class="add" (click)="add(data)">Add +</button>
+            }
             <button class="cancelar" (click)="onClose()">Cancrlar</button>
         </div>
     </div>

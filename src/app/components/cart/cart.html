@@ -1,0 +1,19 @@
+<h3 class="carrito-titulo">Carrito</h3>
+<div class="carrito-contenedor">
+    @if (items().length===0) {
+    <div class="carrito-vacio">Vacío</div>
+    }
+    @for (item of items(); track $index) {
+    <div class="carrito-item">
+        <span class="carrito-nombre">{{ item.nombre }}</span>
+        <span class="carrito-precio">${{ item.precio }}</span>
+        <button class="carrito-eliminar" (click)="remove($index)">Eliminar</button>
+    </div>
+    }
+    @if (items().length) {
+    <div class="carrito-total">
+        <p>Total: <strong>${{ total() }}</strong></p>
+        <button class="carrito-vaciar" (click)="clear()">Vaciar</button>
+    </div>
+    }
+</div>
