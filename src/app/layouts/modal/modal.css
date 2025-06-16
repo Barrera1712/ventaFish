@@ -87,7 +87,7 @@ h2{
 
 .add{
     width: 100%;
-    background: #007d8d;
+    background: #008d47;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -96,5 +96,29 @@ h2{
     border-radius: 5px;
 }
 .add:hover {
-    background: #005f6b;
+    background: #004d26;
+}
+.modal-body{
+    padding: 1rem;
+}
+.cancelar{
+    width: 100%;
+    background: #ff2727;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancelar:hover {
+    background: #751212;
+}
+
+.modal-footer {
+    display: flex;
+    gap:  1rem;
+    justify-content: space-between;
+    padding: 1rem;
 }
